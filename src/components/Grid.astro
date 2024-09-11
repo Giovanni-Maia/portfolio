@@ -13,30 +13,25 @@ const { variant } = Astro.props;
 <style>
 	.grid {
 		display: grid;
-		grid-auto-rows: 1fr;
+		grid-auto-rows:13fr;
 		gap: 1rem;
 		list-style: none;
 		padding: 0;
 	}
 
 	.grid.small {
-		grid-template-columns: 1fr 1fr;
-		gap: 1.5rem;
-	}
-
-	/* If last row contains only one item, make it span both columns. */
-	.grid.small > :global(:last-child:nth-child(odd)) {
-		grid-column: 1 / 3;
+		grid-template-columns: 1fr;
+		gap: 2rem;
 	}
 
 	@media (min-width: 50em) {
 		.grid {
-			grid-template-columns: 1fr 1fr;
-			gap: 4rem;
+			grid-template-columns: 1fr;
+			gap: 2rem;
 		}
 
 		.grid.offset {
-			--row-offset: 7.5rem;
+			--row-offset: 2.5rem;
 			padding-bottom: var(--row-offset);
 		}
 
