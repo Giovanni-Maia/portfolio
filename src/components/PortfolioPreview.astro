@@ -14,7 +14,7 @@ const { data, slug } = Astro.props.project;
 	<span class="title">{data.title}</span><br/>
 	<div class="wrapper stack gap-2 lg:gap-2">
 		<div class="tags">
-			{data.tags.map((t) => <Pill><Icon icon={t.icon} size="1.33em" />{t.name}</Pill>)}
+			{data.tags.map((t) => <Pill><Icon icon={t.icon as "code"} size="1.33em" />{t.name}</Pill>)}
 		</div>
 	</div>
 </a>
