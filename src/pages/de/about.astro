@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
+const currentYear = new Date().getFullYear();
 ---
 
 <BaseLayout title="About | Giovanni Maia" description="About me!">
@@ -32,7 +33,7 @@ import Icon from '../../components/Icon.astro';
 					<br/>
 					<p>
 						In Brazil, I took my Bachelor's Degree in Computer Science back in 2006 and right after that I started working at Accenture Automation &
-						Industrial Solutions as a Software Engineer, so I have a long experience in software development.
+						Industrial Solutions as a Software Engineer, so I have {currentYear - 2006}+ years of experience in software development.
 					</p>
 					<br/>
 					<p>
