@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import PortfolioPreview from '../../components/PortfolioPreview.astro';
+import Hero from '../../components/Hero.astro';
+import Grid from '../../components/Grid.astro';
+
+const projects = (await getCollection('work')).sort(
+	(a, b) => b.data.order - a.data.order,
+);
+---
+
+<BaseLayout
+	title="My Work | Giovanni Maia"
+	description="Learn about Giovanni Maia's most recent projects"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="My Work"
+				tagline="Below you can see some of my projects nad positions I have held, to get an idea of my past experience."
+				align="start"
+			/>
+			<Grid variant="small">
+				{
+					projects.map((project) => (
+						<li>
+							<PortfolioPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
