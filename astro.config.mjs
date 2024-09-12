@@ -9,5 +9,4 @@ export default defineConfig({
         routing: {
             prefixDefaultLocale: false
         }
-      },
-    site: 'https://astrofy-template.netlify.app',});
+      },});
