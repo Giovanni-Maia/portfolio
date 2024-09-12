@@ -1,12 +1,14 @@
 ---
 title: Onpex GmbH
-publishDate: 2020-03-04 00:00:00
+order: 3
 description: |
   We developed a virtual showcase for the softest bedding imaginable.
 tags:
   - {icon: java, name: Java}
   - {icon: lib, name: Spring}
+  - {icon: cloud, name: Cloud}
   - {icon: lib, name: Spring Boot}
+  - {icon: db, name: Postgres}
   - {icon: lib, name: Spring Cloud}
 ---
 

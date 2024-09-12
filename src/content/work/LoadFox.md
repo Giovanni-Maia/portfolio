@@ -1,12 +1,14 @@
 ---
 title: LoadFox GmbH
-publishDate: 2019-10-02 00:00:00
+order: 4
 description: |
   We developed a platform to help Route Planners.
 tags:
   - {icon: java, name: Java}
   - {icon: lib, name: Spring}
+  - {icon: aws, name: AWS}
   - {icon: lib, name: Spring Boot}
+  - {icon: db, name: MySQL}
   - {icon: lib, name: Spring Cloud}
 ---
 
